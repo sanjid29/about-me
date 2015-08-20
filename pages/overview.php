@@ -4,7 +4,7 @@
  	<div class="col-xs-1"></div>
 		<div class="col-xs-10">
   			<div class="jumbotron" align="center">	
-  				<img id='myimage' class="img-responsive" style="height:400px; width:auto;" src="images/1.jpg"> 
+  				<img id='myimage' class="img-responsive" style="height:auto; width:40%;" src="images/1.jpg"> 
   				<h1>Hello,World!</h1>	
   				<p>Welcome to my personal website</p>
   				<p><a class="btn btn-primary btn-lg" href="#" id="myinfo" role="button">Learn more about me</a></p>
@@ -50,7 +50,7 @@
 </div>
 <div class="row" id="gallery"> 
 <div class="col-xs-12" align="center"><h1> My Pictures </h1> </div>
-	<div class="col-xs-6" >
+	<div class="col-xs-4" >
 	<div class="view view-sixth"> 
 		<img src="images/mypics/1.jpg">
                     <div class="mask">
@@ -59,7 +59,7 @@
                     </div>
 	</div>
 	</div>
-	<div class="col-xs-6"  >
+	<div class="col-xs-4"  >
 	<div class="view view-sixth">
 		<img  src="images/mypics/1.jpg">
                     <div class="mask">
@@ -68,7 +68,7 @@
                     </div>
 	</div>
 	</div>
-	<div class="col-xs-6" >
+	<div class="col-xs-4" >
 	<div class="view view-sixth">
 		<img src="images/mypics/1.jpg">
                     <div class="mask">
@@ -77,14 +77,31 @@
                     </div>
 	</div>
 	</div>
-	<div class="col-xs-6">
-	<div class="view view-sixth" >
+	<div class="col-xs-4" >
+	<div class="view view-sixth"> 
 		<img src="images/mypics/1.jpg">
                     <div class="mask">
                         <h2> Picture One </h2>
                         <p>Soccer Cup.</p>
                     </div>
-	
+	</div>
+	</div>
+	<div class="col-xs-4"  >
+	<div class="view view-sixth">
+		<img  src="images/mypics/1.jpg">
+                    <div class="mask">
+                        <h2> Picture One </h2>
+                        <p>Soccer Cup.</p>
+                    </div>
+	</div>
+	</div>
+	<div class="col-xs-4" >
+	<div class="view view-sixth">
+		<img src="images/mypics/1.jpg">
+                    <div class="mask">
+                        <h2> Picture One </h2>
+                        <p>Soccer Cup.</p>
+                    </div>
 	</div>
 	</div>
 </div>

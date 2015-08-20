@@ -36,7 +36,7 @@ window.onload = function() {
 <?php else: ?>
 <script>
 window.onload = function() {
-    alert("User Signed In :(");
+    alert("User Signed In :) ");
     
     window.location.replace("http://practice.stage0615.activationltd.com/main.php");
 }

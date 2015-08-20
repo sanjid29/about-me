@@ -12,7 +12,7 @@ $name=$_SESSION["name"];
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>I,ME & MYSELF</title>
     <!-- Bootstrap -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pathway Gothic One">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -78,7 +78,7 @@ Your browser does not support the audio element.
     </div>
   </div>
   <div class="col-sm-9">
-    <img id="banner" src="images/banner/1.jpg" style="height:20vh; width:100%;">
+    <img id="banner" src="images/banner/1.jpg" style="height:220px; width:100%;">
   </div>
 </div>
 <?php 

@@ -84,28 +84,27 @@ if(isset($_POST['submit']))
              Thank you
 		</p>
             
-			<div class="row">
+			<div class="row" style="margin-left:0px; margin-right: 0px; padding: 2%;">
 				<form action="" method="post" >
 				<div class="col-xs-4 "><input type="text"  class="form-control cu_in" placeholder="Name" name="name"><span><?php echo $errname; ?></span></div>
 			    <div class="col-xs-4 "><input type="text"  class="form-control cu_in" placeholder="Telephone" name="telephone"></div>
 				<div class="col-xs-4 "><input type="text" class="form-control cu_in" placeholder="Email" name="email"><span><?php echo $errmail; ?></span></div>
-				</div>
-				<br />
-				<input type="text" class="form-control cu_in" placeholder="Subject" name="subject"><span><?php echo $errsub; ?></span>
-				<br />	
-				<textarea  class="form-control cu_in" rows="3" placeholder="Message" name="message"></textarea><span><?php echo $errmsg ?></span>
+				
+				<div class="col-xs-12 " style="margin-top: 1%"><input type="text" class="form-control cu_in" placeholder="Subject" name="subject"><span><?php echo $errsub; ?></span></div>
+				
+				<div class="col-xs-12" style="margin-top: 1%"><textarea  class="form-control cu_in" rows="3" placeholder="Message" name="message"></textarea><span><?php echo $errmsg ?></span></div>
 				<br />					
 				<div class="row" align="center">
 				<div class="col-xs-4 "></div>
-				<div class="col-xs-4 "> <input class="send_cu" type="submit" value="SEND" name="submit"> </div>
-					  <div class="clearfix visible-xs-block"> </div>
-					  <div class="col-xs-4 "></div>
+				<div class="col-xs-4 "> <input class="send_cu" type="submit" value="SEND" name="submit" style="margin-top: 2%"> </div>
+				<div class="clearfix visible-xs-block"> </div>
+				<div class="col-xs-4 "></div>
 				</div>
 				</form>
 		
      </div><!--container -->
   
-  <div class="container-fluid" style="margin-top:5%; margin-bottom:5%";>
+  <div class="container-fluid" style="margin-top:5%; margin-bottom:5%" ;>
  		<div class="row">
  		 <div class="col-xs-12" >
  		 <h2 align="center"> Find Me In Google Map </h2>
