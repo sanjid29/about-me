@@ -1,0 +1,8 @@
+[18-Aug-2015 13:25:50 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/stage0615activat/public_html/practice/pages/mail.php on line 10
+[18-Aug-2015 16:16:34 America/Chicago] PHP Warning:  link(): No such file or directory in /home/stage0615activat/public_html/practice/pages/mail.php on line 13
+[18-Aug-2015 16:20:25 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/stage0615activat/public_html/practice/pages/mail.php on line 20
+[19-Aug-2015 01:08:27 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/stage0615activat/public_html/practice/pages/mail.php on line 14
+[19-Aug-2015 01:09:28 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/stage0615activat/public_html/practice/pages/mail.php on line 14
+[19-Aug-2015 01:10:05 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/stage0615activat/public_html/practice/pages/mail.php on line 22
+[19-Aug-2015 01:13:32 America/Chicago] PHP Parse error:  syntax error, unexpected 'Your' (T_STRING), expecting ',' or ';' in /home/stage0615activat/public_html/practice/pages/mail.php on line 15
+[19-Aug-2015 01:13:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/stage0615activat/public_html/practice/pages/mail.php on line 18
