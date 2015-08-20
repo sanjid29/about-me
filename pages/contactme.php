@@ -1,3 +1,5 @@
+
+
 <script
 src="http://maps.googleapis.com/maps/api/js">
 </script>
@@ -26,22 +28,54 @@ marker.setMap(map);
 
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-        <div class="container-fluid" style="margin-top:5%";>
-        <h1 id='report' align="center" style="color:red;"> 
-        <?php 
-        $var=0;
-        $var=$_SESSION['var'];
-        if($var==1)
-        {
-        $var_value = $_SESSION['varname'];
-        }
-        else
-        $var_value=null;
-        echo $var_value;
-        session_destroy();
-        ?> 
-        </h1>
-        
+       
+<?php 
+if(isset($_POST['submit']))
+{
+	$errname=$errmail=$errsub=$errmsg=null;
+    $to = "sanjid.habib@gmail.com"; 
+    $from = $_POST['email']; 
+    $name = $_POST['name'];
+    $subject = $_POST['subject'];
+	$message=$_POST['message'];
+	if(empty($name))
+	{
+		$errname="Please Enter Your Name";
+	}
+	if(empty($from))
+	{
+		$errmail="Please Enter Your Email";
+	}
+	if(empty($subject))
+	{
+		$errsub="Please Enter Your Subject";
+	}
+	if(empty($message))
+	{
+		$errmsg="Please Enter Your Message";
+	}
+	if (!filter_var($from, FILTER_VALIDATE_EMAIL) === true)
+	{
+		$errmail="Please Enter Your Correct Email";
+	}
+	if(!empty($errname) or !empty($errmail) or !empty($errsub) or !empty($errmsg))
+	{
+		echo "<h1 align='center'>failed</h1>";
+	}
+	else {
+	$message = $first_name . " wrote the following:" . "\n\n" . $message;
+	
+    $headers = "From:" . $from;
+    
+    if(mail($to,$subject,$message,$headers))
+     {
+     	echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+     }
+	else echo "failed";
+   }
+	}
+  
+?>
   	<h1 align="center"><strong>CONTACT ME</strong></h1>
             <p align="center" >
              You can send a mail to me and surely i will get back to you. Feel free to mail to me.
@@ -49,28 +83,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
              <p align="center">
              Thank you
 		</p>
-            <form action="pages/mail.php" method="post" >
+            
 			<div class="row">
-				<div class="col-xs-4 "><input type="text"  class="form-control cu_in" placeholder="Name" name="name"></div>
-			    	<div class="col-xs-4 "><input type="text"  class="form-control cu_in" placeholder="Telephone" name="telephone"></div>
-				<div class="col-xs-4 "><input type="text" class="form-control cu_in" placeholder="Email" name="email"></div>
+				<form action="" method="post" >
+				<div class="col-xs-4 "><input type="text"  class="form-control cu_in" placeholder="Name" name="name"><span><?php echo $errname; ?></span></div>
+			    <div class="col-xs-4 "><input type="text"  class="form-control cu_in" placeholder="Telephone" name="telephone"></div>
+				<div class="col-xs-4 "><input type="text" class="form-control cu_in" placeholder="Email" name="email"><span><?php echo $errmail; ?></span></div>
 				</div>
 				<br />
-				<input type="text" class="form-control cu_in" placeholder="Subject" name="subject">
+				<input type="text" class="form-control cu_in" placeholder="Subject" name="subject"><span><?php echo $errsub; ?></span>
 				<br />	
-				<textarea  class="form-control cu_in" rows="3" placeholder="Message" name="message"></textarea>
+				<textarea  class="form-control cu_in" rows="3" placeholder="Message" name="message"></textarea><span><?php echo $errmsg ?></span>
 				<br />					
 				<div class="row" align="center">
 				<div class="col-xs-4 "></div>
-				<div class="col-xs-4 "> <input class="send_cu" type="submit" value="SEND"> </div>
-					  
+				<div class="col-xs-4 "> <input class="send_cu" type="submit" value="SEND" name="submit"> </div>
 					  <div class="clearfix visible-xs-block"> </div>
 					  <div class="col-xs-4 "></div>
 				</div>
-		</form>
+				</form>
+		
      </div><!--container -->
-      
-          <div class="container-fluid" style="margin-top:5%; margin-bottom:5%";>
+  
+  <div class="container-fluid" style="margin-top:5%; margin-bottom:5%";>
  		<div class="row">
  		 <div class="col-xs-12" >
  		 <h2 align="center"> Find Me In Google Map </h2>
@@ -78,7 +113,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
  		 <div class="col-xs-2">
  		 </div>
  		<div class="col-xs-8">
-              		<div id="googleMap" style="width:65vw; height:50vh;"></div>
+            <div id="googleMap" style="width:65vw; height:50vh;"></div>
 		</div>
 	</div>
 	</div>
+	

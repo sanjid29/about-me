@@ -1,3 +1,5 @@
+
+
 <?php
 session_start();
 $name=$_POST['name'];
@@ -12,7 +14,7 @@ if ((empty($_POST["name"])) || (empty($_POST["email"])) || (empty($_POST["subjec
 	$var_value= "Please Fill Up The Whole Form";
 	$_SESSION['varname'] = $var_value;
 	$_SESSION['var']='1'; 
- 	header('Location: http://practice.stage0615.activationltd.com/?id=contactme');
+ 	header('Location: http://practice.stage0615.activationltd.com/main?id=contactme');
 
 }
 else
