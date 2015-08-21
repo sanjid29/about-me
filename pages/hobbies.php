@@ -109,11 +109,73 @@ foreach ($movies as $movie) {
 }
 echo '</ul>';
 
-
 ?>
-
-
-
 </div>
+<div class="col-xs-12" align="center" id="photography">
+	<h1 align="center"> PhotoGraphy</h1>
+</div>
+<div class="col-xs-12" align="center" id="photography_des">
+<p style="font-size: 25px;">“What i like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.”
+―<span style="color:red;">Karl Lagerfeld</span> 
+</p>
+<p> I am not a professional photographer. This is my just my way to capture some essence of life and keep it in my own canvas.</p>
+<button type="button" class="btn btn-success" id='photography_view'>See the essence</button>
+</div>
+<div class="col-xs-12" align="center" id="photo_view">
+<div class="col-xs-6" >
+	<div class="view view-sixth"> 
+		<img src="images/photography/1.jpg">
+                    <div class="mask">
+                        <h2> Picture One </h2>
+                        <p>Soccer Cup.</p>
+                    </div>
+	</div>
+	</div>
+	<div class="col-xs-6"  >
+	<div class="view view-sixth">
+		<img  src="images/photography/2.jpg">
+                    <div class="mask">
+                        <h2> Picture One </h2>
+                        <p>Soccer Cup.</p>
+                    </div>
+	</div>
+	</div>
+	<div class="col-xs-6" >
+	<div class="view view-sixth">
+		<img src="images/photography/3.jpg">
+                    <div class="mask">
+                        <h2> Picture One </h2>
+                        <p>Soccer Cup.</p>
+                    </div>
+	</div>
+	</div>
+	<div class="col-xs-6" >
+	<div class="view view-sixth"> 
+		<img src="images/photography/4.jpg">
+                    <div class="mask">
+                        <h2> Picture One </h2>
+                        <p>Soccer Cup.</p>
+                    </div>
+	</div>
+	</div>
+	<div class="col-xs-6"  >
+	<div class="view view-sixth">
+		<img  src="images/photography/5.jpg">
+                    <div class="mask">
+                        <h2> Picture One </h2>
+                        <p>Soccer Cup.</p>
+                    </div>
+	</div>
+	</div>
+	<div class="col-xs-6" >
+	<div class="view view-sixth">
+		<img src="images/photography/6.jpg">
+                    <div class="mask">
+                        <h2> Picture One </h2>
+                        <p>Soccer Cup.</p>
+                    </div>
+	</div>
+	</div>
+
 </div>
 </div>

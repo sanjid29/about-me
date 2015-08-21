@@ -9,6 +9,9 @@ $(".university_des").hide();
 $("#jsk_des").hide();
 $("#jsk_slide").hide();
 $('#form').hide();
+$('#photography_des').hide();
+$('#photo_view').hide();
+
   $("#myinfo").click(function(){
         
         $('#starts').toggle();
@@ -41,5 +44,14 @@ $('#form').hide();
     $("#sign").click(function(){
     	$('#form').slideToggle();
     });
+     $("#photography").mouseenter(function(){
+    	$('#photography_des').show();
+    });
+      $("#photography_view").click(function(){
+    	$('#photo_view').show();
+    });
+    
+    
+    
    
 }); 

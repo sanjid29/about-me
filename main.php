@@ -30,8 +30,8 @@ $name=$_SESSION["name"];
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
 
-<audio controls autoplay loop>
-  <source src="mysong.mp3" type="audio/mpeg">
+<audio preload="auto" hidden="true" controls autoplay loop >
+  <source src="Theme.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 
@@ -64,8 +64,8 @@ Your browser does not support the audio element.
               <a href=".?id=hobbies" class="dropdown-toggle" data-toggle="dropdown">Hobbies <b class="caret"></b></a>
               	<ul class="dropdown-menu">
                 	<li><a href="?id=hobbies#football">Football</a></li>
-	            	<li><a href="?id=hobbies#">Gaming</a></li>
-	            	<li><a href="?id=hobbies#">Photography</a></li>
+	            	
+	            	<li><a href="?id=hobbies#photography">Photography</a></li>
               	</ul>
             </li>
         
@@ -96,7 +96,7 @@ include('pages/overview.php');
 ?>
 
 
-<div class="row" style="margin-left:0px;margin-right:0px;">
+<div class="row" style="margin-left:0px;margin-right:0px; margin-top:2%">
 <div class="col-sm-12" align="right" style="background-color:black; >
 <a href="https://www.facebook.com/sanjid.habib" target="_blank" style="target-new: tab;"> <button class="btn btn-facebook"><i class="fa fa-facebook"></i>Connect with Facebook </button></a>
 <a href="https://instagram.com/sanjidhabib/" target="_blank" style="target-new: tab;"> <button class="btn btn-linkedin"><i class="fa fa-instragram"></i>Connect with Instragram </button></a>
