@@ -76,6 +76,7 @@
   </a>
 </div>
 </div>
+<!--
 <div class="col-xs-12" align="center" >
 	
 <?php
@@ -111,6 +112,7 @@ echo '</ul>';
 
 ?>
 </div>
+//-->
 <div class="col-xs-12" align="center" id="photography">
 	<h1 align="center"> PhotoGraphy</h1>
 </div>
