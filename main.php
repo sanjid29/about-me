@@ -30,12 +30,9 @@ $name=$_SESSION["name"];
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
 
-<audio preload="auto" hidden="true" controls autoplay loop >
-  <source src="Theme.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
 
-<div class="row" style="margin-left:0px;margin-right:0px;margin-bottom:2%;">
+
+<div class="row" style="margin-left:0px;margin-right:0px;margin-bottom:1%;">
   <div class="col-sm-3">
     <div class="sidebar-nav">
       <div class="navbar navbar-default" role="navigation">
@@ -71,16 +68,21 @@ Your browser does not support the audio element.
         
             <li><a href="main.php?id=contactme">Contact Info</a></li>
 			<li id='signout'><a href='main.php?id=signout'>Sign Out</a></li>
-	
+			<li><audio preload="auto" controls autoplay loop >
+  					<source src="Theme.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+					</audio>
+			</li>
     	</ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
   </div>
   <div class="col-sm-9">
-    <img id="banner" src="images/banner/1.jpg" style="height:220px; width:100%;">
+    <img id="banner" src="images/banner/1.jpg" style="height:250px; width:100%;">
   </div>
 </div>
+
 <?php 
 if(!empty($_GET['id']))
 {
